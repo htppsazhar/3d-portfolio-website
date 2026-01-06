@@ -4,15 +4,13 @@ import { useFrame } from "@react-three/fiber";
 
 import skyScene from "../assets/3d/sky.glb";
 
-export default function Sky({ isRotating }) {
+export default function Sky() {
   const { scene } = useGLTF(skyScene);
   const skyRef = useRef(scene);
 
   useFrame((_, delta) => {
-    if (!isRotating) return;
-
-    // Very slow rotation – realistic sky motion
-    skyRef.current.rotation.y += 0.2 * delta;
+    // constant slow rotation (independent of island)
+    skyRef.current.rotation.y += 0.05 * delta;
   });
 
   return (
