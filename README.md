@@ -1,46 +1,48 @@
-# 🌍 3D Portfolio Website
+# 🌐 3D Portfolio Website
 
-A modern, interactive **3D portfolio website** built using **React, Three.js, and EmailJS**, designed to showcase my projects, skills, and experience in a visually engaging way.
+An interactive **3D portfolio website** built with **React, Three.js, and Vite**, designed to showcase projects in a visually engaging and modern way.
 
-🔗 **Live Website:**  
-https://azhar-khan-me.vercel.app/
+The project combines **real-time 3D rendering**, smooth UI interactions, and a fully functional **contact system powered by EmailJS**, all optimized for both **desktop and mobile devices**. It reflects my focus on clean architecture, performance, and user-centric front-end development.
+
+🚀 **Live Demo:** https://azhar-khan-me.vercel.app/
 
 ---
 
 ## ✨ Features
 
-- 🌐 **Interactive 3D Landing Page** using Three.js
-- 📱 **Fully Responsive** (Desktop & Mobile optimized)
-- 🧭 Smooth navigation with React Router
-- 📩 **Working Contact Form** powered by EmailJS
-- 🦊 Animated 3D character interaction on Contact page
-- ⚡ Fast deployment using Vercel
+- 🌍 Interactive 3D landing page built with Three.js  
+- 📱 Fully responsive (desktop & mobile optimized)  
+- 🧭 Smooth navigation using React Router  
+- 📬 Working contact form powered by EmailJS  
+- 🦊 Animated 3D character interaction on the Contact page  
+- ⚡ Fast deployment using Vercel  
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-- **Frontend:** React (Vite)
-- **3D Rendering:** Three.js, @react-three/fiber, @react-three/drei
-- **Routing:** React Router DOM
-- **Email Service:** EmailJS
-- **Styling:** Tailwind CSS
-- **Deployment:** Vercel
+- **Frontend:** React (Vite)  
+- **3D Rendering:** Three.js, @react-three/fiber, @react-three/drei  
+- **Routing:** React Router DOM  
+- **Email Service:** EmailJS  
+- **Styling:** Tailwind CSS  
+- **Deployment:** Vercel  
 
 ---
 
 ## 📁 Project Structure
 
+```bash
 3D-Portfolio/
 ├── src/
 │   ├── assets/
-│   │   ├── icons/          # SVG & UI icons
-│   │   ├── images/         # Images used in the site
+│   │   ├── icons/
+│   │   ├── images/
 │   │   ├── favicon.ico
 │   │   ├── react.svg
 │   │   └── sakura.mp3
 │   │
-│   ├── Components/         # Reusable UI components
+│   ├── Components/
 │   │   ├── Alert.jsx
 │   │   ├── CTA.jsx
 │   │   ├── HomeInfo.jsx
@@ -48,33 +50,33 @@ https://azhar-khan-me.vercel.app/
 │   │   └── Navbar.jsx
 │   │
 │   ├── constants/
-│   │   └── index.js        # Static data & constants
+│   │   └── index.js
 │   │
 │   ├── hooks/
-│   │   └── useAlert.js     # Custom alert hook
+│   │   └── useAlert.js
 │   │
-│   ├── models/             # 3D models (React Three Fiber)
+│   ├── models/
 │   │   ├── Bird.jsx
 │   │   ├── Fox.jsx
 │   │   ├── Island.jsx
 │   │   ├── Plane.jsx
 │   │   └── Sky.jsx
 │   │
-│   ├── Pages/              # Application pages
+│   ├── Pages/
 │   │   ├── Home.jsx
 │   │   ├── About.jsx
 │   │   ├── Projects.jsx
 │   │   ├── Contact.jsx
 │   │   └── index.js
 │   │
-│   ├── App.jsx             # App entry with routing
-│   ├── main.jsx            # React DOM entry
-│   └── index.css           # Global styles
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
 │
-├── .env.local               # Environment variables (EmailJS)
-├── .eslintrc.cjs
-├── .gitignore
+├── .env.local
 ├── index.html
 ├── package.json
 ├── vite.config.js
+├── .eslintrc.cjs
+├── .gitignore
 └── README.md
