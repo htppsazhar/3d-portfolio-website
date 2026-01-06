@@ -7,6 +7,11 @@ import useAlert from '../hooks/useAlert';
 import Alert from '../Components/Alert';
 
 const Contact = () => {
+  console.log(
+  'EMAILJS KEY:',
+  import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+);
+
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [isLoading, setIsLoading] = useState(false);

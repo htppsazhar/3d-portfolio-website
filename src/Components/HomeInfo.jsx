@@ -9,7 +9,7 @@ const InfoBox = ({ text, link, btnText }) => (
     <Link
       to={link}
       className="neo-brutalism-white neo-btn"
-      style={{ boxShadow: 'none' }}   // ✅ THIS LINE removes white box shadow
+      style={{ boxShadow: 'none' }}
     >
       {btnText}
       <img
@@ -25,7 +25,7 @@ const renderContent = {
   1: (
     <h1
       className="text-center neo-brutalism-blue py-4 px-8 text-white mx-5"
-      style={{ boxShadow: 'none' }}   // blue box shadow already handled
+      style={{ boxShadow: 'none' }}
     >
       Hi, I am <span className="font-semibold">Azhar Khan</span> 👋
       <br />
@@ -36,7 +36,7 @@ const renderContent = {
   2: (
     <InfoBox
       text="From internships to independent projects — learning by doing."
-      link="/About"
+      link="/about"        // ✅ fixed
       btnText="Learn more"
     />
   ),
@@ -44,7 +44,7 @@ const renderContent = {
   3: (
     <InfoBox
       text="Turning raw data into meaningful insights — one project at a time."
-      link="/Projects"
+      link="/projects"     // ✅ fixed
       btnText="Visit my portfolio"
     />
   ),
@@ -52,7 +52,7 @@ const renderContent = {
   4: (
     <InfoBox
       text="Have a data problem or idea? I'm just a few keystrokes away."
-      link="/Contact"
+      link="/contact"      // ✅ fixed
       btnText="Let's talk"
     />
   ),
