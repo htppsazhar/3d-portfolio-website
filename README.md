@@ -31,13 +31,50 @@ https://azhar-khan-me.vercel.app/
 
 ## 📁 Project Structure
 
-```bash
-src/
-│── Components/      # Reusable UI components
-│── Pages/           # Home, About, Projects, Contact pages
-│── models/          # 3D models (Island, Sky, Fox, Plane)
-│── assets/          # Images, icons, 3D assets
-│── hooks/           # Custom hooks
-│── App.jsx
-│── main.jsx
-
+3D-Portfolio/
+├── src/
+│   ├── assets/
+│   │   ├── icons/          # SVG & UI icons
+│   │   ├── images/         # Images used in the site
+│   │   ├── favicon.ico
+│   │   ├── react.svg
+│   │   └── sakura.mp3
+│   │
+│   ├── Components/         # Reusable UI components
+│   │   ├── Alert.jsx
+│   │   ├── CTA.jsx
+│   │   ├── HomeInfo.jsx
+│   │   ├── Loader.jsx
+│   │   └── Navbar.jsx
+│   │
+│   ├── constants/
+│   │   └── index.js        # Static data & constants
+│   │
+│   ├── hooks/
+│   │   └── useAlert.js     # Custom alert hook
+│   │
+│   ├── models/             # 3D models (React Three Fiber)
+│   │   ├── Bird.jsx
+│   │   ├── Fox.jsx
+│   │   ├── Island.jsx
+│   │   ├── Plane.jsx
+│   │   └── Sky.jsx
+│   │
+│   ├── Pages/              # Application pages
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Contact.jsx
+│   │   └── index.js
+│   │
+│   ├── App.jsx             # App entry with routing
+│   ├── main.jsx            # React DOM entry
+│   └── index.css           # Global styles
+│
+├── .env.local               # Environment variables (EmailJS)
+├── .eslintrc.cjs
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
